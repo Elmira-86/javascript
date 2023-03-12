@@ -1,0 +1,9 @@
+.content{
+    display: grid;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid black;
+    width: 500px;
+}
+

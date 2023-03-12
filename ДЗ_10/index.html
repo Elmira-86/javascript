@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>document</title>
+</head>
+<body>
+<div class="content">
+    <div class="JSON">
+        <h1 class="activity"></h1>
+        <p class="type"></p>
+        <p class="price"></p>
+        <a class="link"></a>
+
+    </div>
+</div>
+
+    <script src="data.js">
+    </script>    
+    <script>
+        const data = JSON.parse(dataInfo);
+        data.forEach(element => {
+
+        const divEl = document.createElement("div");
+        divEl.classList.add = "JSON";
+        document.querySelector(".content").appendChild(divEl);
+
+        const h1El = document.createElement("h1");
+        h1El.classList.add = ("activity");
+        h1El.textContent = element.activity;
+        divEl.appendChild(h1El);
+
+        const p1El = document.createElement("p1");
+        p1El.classList.add = "type";
+        p1El.textContent = element.type
+        divEl.appendChild(p1El);
+
+        const p2El = document.createElement("p2");
+        p2El.classList.add = "price";
+        p2El.textContent = element.price;
+        divEl.appendChild(p2El);
+
+        const aEl = document.createElement("a");
+        aEl.classList.add = "link";
+        aEl.src = element.link;
+        divEl.appendChild(aEl);
+        });
+    </script>
+</body>
+</html>
