@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин(Проект сайта)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="leftHeader">
+          <img src="img/logo.png" alt="" />
+          <img class="searchIcon" src="img/search.png" alt="" />
+        </div>
+
+        <div class="rightHeader">
+          <img src="img/bars.png" alt="" />
+          <img class="userIcon" src="img/user.png" alt="" />
+
+          <span class="cartIconWrap">
+            <img class="cartIcon" src="img/cart.png" alt="" />
+            <span>0</span>
+          </span>
+
+          <div class="basket hidden">
+            <div class="basketRow basketHeader">
+              <div>Название товара</div>
+              <div>Количество</div>
+              <div>Цена за шт.</div>
+              <div>Итого</div>
+              <div>Удалить</div>
+            </div>
+            <div class="basketList"></div>
+            <div class="basketTotal">
+              Товаров в корзине на сумму:
+              <span class="basketTotalValue">0</span> $
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="promo center">
+      <div class="promo_img">
+          <img src="img/big_foto.png" alt="Большое фото">
+      </div>
+      <div class="promo_content">
+          <div class="promo_info">
+              <h1 class="promo_title">THE BRAND</h1>
+              <h2 class="promo_heading">OF LUXERIOUS <span class="letter"> FASHION </span> </h2>
+          </div>
+      </div>
+  </section>
+  <section class="sale center">
+    <div class="sale_item">
+        <img src="img/women.jpg" alt="">
+        <div class="sale_content">
+            <p class="sale_text">30% OFF</p>
+            <h3 class="sale_heading">FOR WOMEN</h3>
+        </div>
+    </div>
+    <div class="sale_item">
+        <img src="img/men_body.jpg" alt="">
+        <div class="sale_content">
+            <p class="sale_text">HOT DEAL</p>
+            <h3 class="sale_heading">FOR MEN</h3>
+        </div>
+    </div>
+    <div class="sale_item">
+        <img src="img/kids.jpg" alt="">
+        <div class="sale_content">
+            <p class="sale_text">NEW ARRIVALS</p>
+            <h3 class="sale_heading">FOR KIDS</h3>
+        </div>
+    </div>
+    <div class="sale_item sale_big">
+        <img class="sale_big_mobail" src="img/sibig.jpg" alt="sale image">
+        <div class="sale_content">
+            <p class="sale_text">LUXIROUS & TRENDY</p>
+            <h3 class="sale_heading">ACCESORIES</h3>
+        </div>
+    </div>
+</section>
+  <div class="fetured_item">
+      <h2 class="heading_fetured">Fetured Items</h2>
+      <div class="featuredTitle">
+        Shop for items based on what we featured in this week
+      </div>
+  </div>
+
+      <div class="featuredItems"></div>
+
+      <div class="center_button">
+        <button class="button">Browse All Product</button>
+        </div>
+
+    <div class="footer_heading">
+      <div class="container">
+        <div class="footer_heading_content">
+          <img src="img/delivri.svg" alt="" />
+          <a href="#" class="servicesTitle">Free Delivery</a>
+          <div class="servicesText">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </div>
+        </div>
+
+        <div class="footer_heading_content">
+          <img src="img/sale.svg" alt="" />
+          <a href="#" class="servicesTitle">Sales & discounts</a>
+          <div class="servicesText">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </div>
+        </div>
+
+        <div class="footer_heading_content">
+          <img src="img/quality.svg" alt="" />
+          <a href="#" class="servicesTitle">Quality assurance</a>
+          <div class="servicesText">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe">
+      <div class="container">
+        <div class="subscribeLeft">
+          <img src="img/subscribeUser.png" alt="" />
+          <div class="subscribeUserText">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+            purus condimentum“
+          </div>
+        </div>
+
+        <div class="subscribeRight">
+          <div class="subscribeTitle">SUBSCRIBE</div>
+          <div class="subscribeText">FOR OUR NEWLETTER AND PROMOTION</div>
+          <form action="" class="subscribeForm">
+            <input type="text" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer_end">
+      <div class="footer_end_left">
+          <p>© 2022 Brand All Rights Reserved.</p>
+      </div>
+      <div class="footer_end_right">
+          <img class="socies" src="img/facebook.svg" alt="Facebook">
+          <img class="socies" src="img/instagram.svg" alt="Instagram">
+          <img class="socies" src="img/P.svg" alt="P">
+          <img class="socies" src="img/twitter.svg" alt="Twitter">
+      </div>
+  </section>
+
+    <script src="data.js"></script>
+    <script src="products.js"></script>
+    <script src="basket.js"></script>
+  </body>
+</html>
